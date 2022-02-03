@@ -1,12 +1,12 @@
 # teamleader-powerbi
 Custom connector to import Teamleader data in Power Bi.
 
-As a recent side project for a Power BI dashboard, I had to import data from Teamleader. Since the API of Teamleader requires Oauth2, I had to use a custom connector to get my data. After quite some research I adapted an existing custom connector for another API. It took some time to get the details right, but I tought others could benefit from it when needed or refine it!
+As a recent side project for a Power BI dashboard, I had to import data from Teamleader. Since the API of Teamleader requires Oauth2, I had to use a custom connector to get my data. After quite some research I adapted an existing custom connector for another API. It took some time to get the details right, but I tought others could benefit from it when needed or refine it (it's not the cleanest code)!
 
 Important steps:
 - You need Visual Studio.
 - You have to install some extra packages (Power Query SDK if I remember correctly).
-- You need to a work in the .pq and query.pq files.
+- You need to work in the .pq and query.pq files.
 - You need to build it and put the .mez file in EXACTLY this place: C:\Users\gebruiker\Documents\Microsoft Power Bi Desktop\Custom Connectors (or in English of course)
 - For the authentication you need the powerbi url as found in the code.
 - You need to make a Teamleader app and plug the id and secret into the .pq file.
